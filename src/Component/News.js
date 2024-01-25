@@ -5,11 +5,11 @@ import NewsItem from './NewsItem'
 export class News extends Component {
 
   static defaultProps = {
-    country:'in',
-    pageSize:6,
+    country: 'in',
+    pageSize: 6,
     category: 'general',
   }
-  
+
   // static propTypes = {
   //   country: PropTypes.string,
   //   pageSize: PropTypes.number,
@@ -70,8 +70,8 @@ export class News extends Component {
   render() {
     return (<>
       <div className="container my-3">
-        <div className="text-center" style={{margin: '20px 0'}}>
-          <h2>URnews - Top Headlines</h2>
+        <div className="text-center" style={{ margin: '20px 0' }}>
+          <h2>thenewsbook - Top Headlines</h2>
         </div>
         <div className="row">
           {this.state.articles.map((element) => {
